@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS Output</title>
+</head>
+<body>
+   <a href="./index.html">Back</a>
+   <br>
+   <h3>Output using innerHTML</h3>
+   <p id="demo">5 + 6 = </p>
+   <button type="button" onclick="myFunction()">Calculate</button>
+   <hr>
+   <h3>Output using document.write()</h3>
+   <p>Using document.write() after an HTML 
+      document is loaded, will delete all existing HTML</p>
+   <p id="demo1">5 + 6 = </p>
+   <script>document.write(5 + 6);</script>
+   <hr>
+   <h3>Output using window.alert()</h3>
+   <button type="button" onclick="myAlert()">Alert 5 + 6</button>
+   <p>You can skip the window keyword.</p>
+   <p>In JavaScript, the window object is the global scope object. 
+      This means that variables, properties, and methods 
+      by default belong to the window object. 
+      This also means that specifying the window 
+      keyword is optional</p>
+   <hr>
+   <h3>Using console.log()</h3>
+   <p>F12 on your keyboard will activate debugging.</p>
+   <p>Then select "console" in the debugger menu.</p>
+   <button type="button" onclick="console.log(5 + 6)">Console 5 + 6</button>
+   <hr>
+   <h3>Using window.print()</h3>
+   <button type="button" onclick="window.print()">Print</button>
+
+   <script>
+      function myFunction() {
+         document.getElementById("demo").innerHTML += 5 + 6;
+      }
+      function myAlert() {
+         window.alert(5 + 6);
+      }
+   </script>
+</body>
+</html>

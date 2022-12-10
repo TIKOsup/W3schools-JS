@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS Introduciton - HTML Chages</title>
+</head>
+<body>
+   <a href="./index.html">Back</a>
+   <br>
+   <p id="demo">Java Script can change HTML content</p>
+   <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello World!'">
+      Click me to change text
+   </button>
+   <hr>
+   <p>HavaScript can change HTML attribute values.</p>
+   <p>In this case JavaScript changes the value of the 
+      src (source) attribute of an image.</p>
+   <button onclick="document.getElementById('image').src = './img/Jason Voorhees.png'">
+      Jason Voorhees
+   </button>
+   <img id="image" src="./img/Jason Voorhees.png" alt="Jason Voorhees" style="width: 100px">
+   <button onclick="document.getElementById('image').src = './img/Michael Myers.png'">
+      Michael Myers
+   </button>
+   <hr>
+   <p id="text">JavaScript can change the style of an HTML element.</p>
+   <button onclick="document.getElementById('text').style.fontSize = '20px'">
+      Click me to increase font-size
+   </button>
+   <button onclick="document.getElementById('text').style.display = 'none'">
+      Click me to hide
+   </button>
+   <button onclick="document.getElementById('text').style.display = 'block'">
+      Click me to show
+   </button>
+   <hr>
+</body>
+</html>
