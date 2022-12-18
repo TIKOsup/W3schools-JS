@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS Variables</title>
+</head>
+<body>
+   <a href="./index.html">Back</a>
+   <br>
+   <h2>JavaScript Variables</h2>
+   <p>x, y, and z are variables.</p>
+   <p id="var"></p>
+
+   <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      document.getElementById("var").innerHTML = "The values of z is: " + z;
+   </script>
+
+   <h3>When to Use JavaScript var?</h3>
+   <p>Always declare JS variables with var, let, or const.</p>
+   <p>The var keyword is used in all JS code from 1995 to 2015.</p>
+   <p>The let and const keywords were added to JS in 2015.</p>
+   <p>If you want your code to run in older browsers, you must use var.</p>
+
+   <h3>JavaScript Identifiers</h3>
+   <p>All JS variable mus tbe identified with unique names, that called identifiers.</p>
+
+   <h3>The Assignment Operator</h3>
+   <p>In JS, the equal sign (=) is an "assignment" operator, not an "equal to" operator.</p>
+   <p>x = x + 5</p>
+   <p>In JS it calculates the vlaue of x + 5 and puts the result into x. The value of x is incremented by 5.</p>
+</body>
+</html>
