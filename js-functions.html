@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS Functions</title>
+</head>
+<body>
+   <a href="./index.html">Back</a>
+   <br>
+   <h2>JavaScript Functions</h2>
+   <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+   <p>A JavaScript function is executed when "something" calls it.</p>
+
+   <p>This example calls a function which performs a camculation, and returns the result:</p>
+   <p id="example1"></p>
+
+   <script>
+      function multiplication(p1, p2) {
+         return p1 * p2;
+      }
+      document.getElementById("example1").innerHTML = multiplication(4, 3);
+   </script>
+
+   <h3>JavaScript Function Syntax</h3>
+   <p>A JavaScript function is defined with the function keyword, 
+      followed by a name, foollowed by parantheses ().</p>
+   <p>The parentheses may include parameter names separated by commas, (parameter1, parameter2)</p>
+   <p>Function arguments are the values received by the function when it is called.</p>
+   
+   <h3>The () Operator Calls the Function</h3>
+   <p>Using the example above, toCelsius refers to the function 
+      object, and toCelsius() refers to the function result.</p>
+</body>
+</html>

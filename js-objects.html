@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS Objects</title>
+</head>
+<body>
+   <a href="./index.html">Back</a>
+   <br>
+   <h2>JavaScript Objects</h2>
+   <p>Objects have different properties and methods.</p>
+   <p>Objects can have the same properties, but the property values can alse be different.</p>
+
+   <p>Objects are variables too. But objects can contain many values.</p>
+   <p>This code assigns many values (Fiat, 500, white) to a variable named car:</p>
+   <p id="demo"></p>
+
+   <script>
+      // Create an object:
+      const car = {
+         type: "Fiat",
+         model: 500,
+         color: "white"
+      };
+
+      // Display some data from the object:
+      document.getElementById("demo").innerHTML = "The car type is " + car.type;
+   </script>
+
+   <p>The values are written as name:value pairs.</p>
+   <p>It is a common practice to declare objects with the const keyword.</p>
+   <p>The name:values pairs in JavaScript are called properties.</p>
+
+   <h3>Accessing Object Properties</h3>
+   <p>You can access object properties in two ways:</p>
+   <ul>
+      <li>objectName.propertyName</li>
+      <li>objectName["propertyName"]</li>
+   </ul>
+
+   <h3>Object Methods</h3>
+   <p>Objects can also have methods.</p>
+   <p>Methods are actions that can be performed on objects.</p>
+   <p>Methods are stored in properties as function definitions.</p>
+
+   <script>
+      // Create an object
+      const person = {
+         firstName: "John",
+         lastName : "Doe",
+         id       : 5566,
+         fullName : function() {
+            return this.firstName + " " + this.lastName;
+         }
+      };
+   </script>
+
+   <p>'this' refers to the person object.</p>
+
+   <h3>What is this?</h3>
+   <p>In JavaScript the 'this' keyword refers to an object.</p>
+
+   <table>
+      <tr><td>In an object method, 'this' refers to the <object data="" type=""></object></td></tr>
+      <tr><td>Alone, 'this' refers to the global object.</td></tr>
+      <tr><td>In a function, 'this' refers to the global object.</td></tr>
+      <tr><td>In a function, in strict mode, 'this' is undefined.</td></tr>
+      <tr><td>In an event, 'this' refers to the element that received the event.</td></tr>
+      <tr><td>Methods like call(), apply(), and bind() can refer 'this' to any object.</td></tr>
+   </table>
+
+   <p>'this' is not a variable. It is a keyword. You cannot change the value of 'this'</p>
+   <p id="method-example"></p>
+
+   <script>
+      // Display data from the object:
+      document.getElementById("method-example").innerHTML = person.fullName();
+   </script>
+</body>
+</html>
