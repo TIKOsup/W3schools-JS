@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <a href="./index.html">Back</a>
+    <br>
+    <h2>JavaScript Events</h2>
+    <p>Some examples of HTML events:</p>
+    <ul>
+        <li>An HTML web page has finished loading</li>
+        <li>An HTML input field was changed</li>
+        <li>An HTML button was clicked</li>
+    </ul>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    <p id="demo"></p>
+
+    <button onclick="displayDate()">The time is?</button>
+    <p id="demo1"></p>
+
+    <script>
+        function displayDate() {
+            document.getElementById('demo1').innerHTML = Date();
+        }
+    </script>
+
+    <h3>Common HTML Events</h3>
+    <table>
+        <tr>
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>onchange</td>
+            <td>An HTML element has been changed</td>
+        </tr>
+        <tr>
+            <td>onclick</td>
+            <td>The user clicks an HTML element</td>
+        </tr>
+        <tr>
+            <td>onmouseover</td>
+            <td>The user moves the mouse over an HTML element`</td>
+        </tr>
+        <tr>
+            <td>onmouseout</td>
+            <td>The user moves the mouse away from an HTML element</td>
+        </tr>
+        <tr>
+            <td>onkeydown</td>
+            <td>The user pushes a keyboard key`</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>The browser has finished loading the page</td>
+        </tr>
+    </table>
+</body>
+</html>
